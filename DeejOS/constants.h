@@ -15,7 +15,7 @@ const int HEIGHT = 320;
 const int HYSTERESIS = 10;
 const int NUM_SLIDERS = 10;
 
-const char* sliderNames[NUM_SLIDERS] = {"Master", "Current", "Unmapped", "System", "Mic", "Chrome", "Discord", "Spotify", "?", "?"};
+const char* sliderNames[NUM_SLIDERS] = {"Master", "Current", "Unmapped", "System", "Mic", "Firefox", "Discord", "Spotify", "?", "?"};
 const int analogInputs[NUM_SLIDERS] = {26, 27, 14, 12, 13, 25, 33, 32, 35, 34};
 TFT_eSPI tft = TFT_eSPI();
 TFT_eSprite spr = TFT_eSprite(&tft); 
@@ -28,8 +28,8 @@ float humidity = -1;
 bool muted = false;
 
 // WIFI
-const char* ssid     = "Livebox6-9CA0";
-const char* password = "3tuiywY762RR";
+const char* ssid     = "WLAN-LXXFWK-OBEN";
+const char* password = "9062238137645681";
 
 // TIME
 const char* ntpServer = "pool.ntp.org";
