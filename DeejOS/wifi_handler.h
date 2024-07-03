@@ -1,5 +1,6 @@
 #include <WiFi.h>
 #include "constants.h"
+#include "private.h"
 
 
 void connectWifi() {

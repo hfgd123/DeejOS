@@ -27,10 +27,6 @@ float temperature = -1;
 float humidity = -1;
 bool muted = false;
 
-// WIFI
-const char* ssid     = "WLAN-LXXFWK-OBEN";
-const char* password = "9062238137645681";
-
 // TIME
 const char* ntpServer = "pool.ntp.org";
 struct tm timeinfo;
