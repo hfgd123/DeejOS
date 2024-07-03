@@ -33,9 +33,9 @@ private:
   HomeWindow(const HomeWindow&) = delete;
   HomeWindow& operator=(const HomeWindow&) = delete;
 
-  const static int NUMBER_OF_BUTTONS = 3;
-  const uint8_t *icons[NUMBER_OF_BUTTONS] = {audio_bmp, /*coding_bmp, lights_bmp, games_bmp, weather_bmp,*/ playpause_bmp, settings_bmp};
-  void (*pressActions[NUMBER_OF_BUTTONS])() = {audioBtn_pressAction, /*codingBtn_pressAction, nullptr, nullptr, nullptr,*/ playpauseBtn_pressAction, settingsBtn_pressAction};
+  const static int NUMBER_OF_BUTTONS = 7;
+  const uint8_t *icons[NUMBER_OF_BUTTONS] = {audio_bmp, coding_bmp, lights_bmp, games_bmp, weather_bmp, playpause_bmp, settings_bmp};
+  void (*pressActions[NUMBER_OF_BUTTONS])() = {audioBtn_pressAction, codingBtn_pressAction, nullptr, nullptr, nullptr, playpauseBtn_pressAction, settingsBtn_pressAction};
 
   static void audioBtn_pressAction() {
     // Sample action for audio button press
